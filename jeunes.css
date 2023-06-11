@@ -1,264 +1,262 @@
-.top-bar {/**/
+.top-bar {
+  padding: 70px; /* Ajoute un espace de 70px de padding autour de la barre supérieure */
+  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Ajoute un dégradé linéaire de couleurs de fond */
+}
 
-    padding: 70px;
-    background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
-  }
-  .menu {/**/
-    list-style-type: none;
-    padding: 0;
-    margin:0;
-  }
-  
-  .menu li {
-    display: inline-block;
-  }
-  
-  .menu li a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-
-  .menu-container {
-    text-align: center;
-  }
-  
-  .menu {
-    display: inline-block;
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu li {
-    display: inline-block;
-  }
-  
-  .menu li a {
-    display: inline-block;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  .footer-text{
-     position: absolute;
-        top: 10;
-        right: 70px;
-        color:white;
-        font-size: 40px;
-        margin-top: 0%;
-        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        margin-bottom: 0%;
-      }
-      
-      
-      .element img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 245px; 
-        height: auto;
-       
-      }
 .menu {
-  display: flex;                /* Transformation en flexbox */
-  padding:0;                    /* Suppression des marges internes */
-            /* Ajout de la couleur d'arrière-plan */
-  justify-content:center;/* Alignements des liens dans le menu */
-  z-index: 2;
+  list-style-type: none; /* Supprime les puces de la liste du menu */
+  padding: 0;
+  margin: 0;
 }
+
 .menu li {
-  list-style-type: none ;       /* Suppression des puces */
-  background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+  display: inline-block; /* Affiche les éléments du menu en ligne horizontale */
 }
+
+.menu li a {
+  display: inline-block; /* Affiche les liens du menu en ligne horizontale */
+  padding: 10px 20px; /* Ajoute un espacement interne de 10px vertical et 20px horizontal aux liens du menu */
+  text-decoration: none; /* Supprime le soulignement des liens du menu */
+  font-weight: bold; /* Applique une épaisseur de police en gras aux liens du menu */
+}
+
+.menu-container {
+  text-align: center; /* Centre horizontalement les éléments du menu */
+}
+
+.menu {
+  display: inline-block; /* Affiche les éléments du menu en ligne horizontale */
+  list-style-type: none; /* Supprime les puces de la liste du menu */
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  display: inline-block; /* Affiche les éléments du menu en ligne horizontale */
+}
+
+.menu li a {
+  display: inline-block; /* Affiche les liens du menu en ligne horizontale */
+  padding: 10px 20px; /* Ajoute un espacement interne de 10px vertical et 20px horizontal aux liens du menu */
+  text-decoration: none; /* Supprime le soulignement des liens du menu */
+  font-weight: bold; /* Applique une épaisseur de police en gras aux liens du menu */
+}
+
+.footer-text {
+  position: absolute; /* Positionne le texte de pied de page de façon absolue */
+  top: 10; /* Définit la distance de 10 pixels depuis le haut */
+  right: 70px; /* Définit la distance de 70 pixels depuis la droite */
+  color: white; /* Couleur du texte en blanc */
+  font-size: 40px; /* Taille de la police de caractères */
+  margin-top: 0%; /* Marge supérieure de 0% */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractères */
+  margin-bottom: 0%; /* Marge inférieure de 0% */
+}
+
+.element img {
+  position: absolute; /* Positionne l'image de façon absolue */
+  top: 0; /* Définit la distance de 0 depuis le haut */
+  left: 0; /* Définit la distance de 0 depuis la gauche */
+  width: 245px; /* Largeur de l'image */
+  height: auto; /* Hauteur de l'image ajustée automatiquement */
+}
+
+.menu {
+  display: flex; /* Affiche les éléments du menu en tant que conteneur flex */
+  padding: 0; /* Supprime les marges internes */
+  justify-content: center; /* Centre horizontalement les éléments du menu */
+  z-index: 2; /* Définit la position en z-index pour empiler les éléments */
+}
+
+.menu li {
+  list-style-type: none; /* Supprime les puces de la liste du menu */
+  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Ajoute un dégradé linéaire de couleurs de fond */
+}
+
 .menu a {
-  display:block;                /* Transformation en block */
-  min-width: 120px;             /* Largeur minimale des liens */   
-        
-  margin: 0.3rem;               /* Marges externes */
-  padding: 0.4rem 0;            /* Marges internes */
-  text-align: center;           /* Centrage du texte */   
-      /* Arrière-plan */
-  background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244));               /* Couleur du texte */
-  text-decoration: none;        /* Suppression du soulignement */
-               /* Ajout d'une bordure */
-                 /* Arrondis des bordures */
-       
-  transition: all 1s ;          /* Ajout des effets de transition */
+  display: block; /* Affiche les liens du menu en tant que bloc */
+  min-width: 120px; /* Définit la largeur minimale des liens du menu */
+  margin: 0.3rem; /* Ajoute une marge externe de 0.3rem autour des liens du menu */
+  padding: 0.4rem 0; /* Ajoute une marge interne de 0.4rem en haut et en bas des liens du menu */
+  text-align: center; /* Centre le texte des liens du menu */
+  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Ajoute un dégradé linéaire de couleurs de fond */
+  text-decoration: none; /* Supprime le soulignement des liens du menu */
+  outline: none; /* Supprime le contour du lien lorsqu'il est en surbrillance */
+  color: #ffffff; /* Couleur du texte en blanc */
+  border: none; /* Supprime la bordure des liens du menu */
 }
-
-
 
 .menuj a:hover,
-.menuj a:hover.actif{
-  color:rgb(229, 0, 126);
-  border-color:rgb(229, 0, 126);
+.menuj a:hover.actif {
+  color: rgb(229, 0, 126); /* Couleur du texte en surbrillance au survol du lien */
+  border-color: rgb(229, 0, 126); /* Couleur de la bordure en surbrillance au survol du lien */
 }
+
 .menur a:hover,
-.menur a:hover.actif{
-  color:rgb(19, 165, 57);
-  border-color: rgb(19, 165, 57);
+.menur a:hover.actif {
+  color: rgb(19, 165, 57); /* Couleur du texte en surbrillance au survol du lien */
+  border-color: rgb(19, 165, 57); /* Couleur de la bordure en surbrillance au survol du lien */
 }
 
 .menuc a:hover,
-.menuc a:hover.actif{        
-  color:  rgb(0, 159,227);
-  border-color:rgb(0, 159,227);
+.menuc a:hover.actif {
+  color: rgb(0, 159, 227); /* Couleur du texte en surbrillance au survol du lien */
+  border-color: rgb(0, 159, 227); /* Couleur de la bordure en surbrillance au survol du lien */
 }
+
 .menup a:hover,
-.menup a:hover.actif{
-    color:rgb(112, 111, 116);
-    border-color: rgb(112, 111, 116);
+.menup a:hover.actif {
+  color: rgb(112, 111, 116); /* Couleur du texte en surbrillance au survol du lien */
+  border-color: rgb(112, 111, 116); /* Couleur de la bordure en surbrillance au survol du lien */
 }
-
-
 
 .jeunes {
-  color: rgb(229, 0, 126);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(229, 0, 126); /* Couleur du texte pour la classe "jeunes" */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
 }
 
 .referent {
-  color: rgb(19, 165, 57);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(19, 165, 57); /* Couleur du texte pour la classe "referent" */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
 }
 
 .consultant {
-  color: rgb(0, 159,227);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(0, 159, 227); /* Couleur du texte pour la classe "consultant" */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
 }
 
 .partenaires {
-  color: rgb(112, 111, 116);
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(112, 111, 116); /* Couleur du texte pour la classe "partenaires" */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
 }
+
 .administrateur {
-    color: rgb(255, 152, 9);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  }
-
-
-.jesuis{
-  text-align:end;
-  color: rgb(255, 255, 255);
-  margin-right: 10%;
-  font-size: 20px;
-}
-h2{
-  text-align: center;
-  color: rgb(229, 0, 126);
-}
-fieldset{
-  background-color: rgb(255, 255, 255);
-  position: relative; 
-  z-index: 1; /* Ceci place ces éléments devant l'image */
-  justify-content: center;
-  align-items: center;
-  margin-left: 32.5%;
-  margin-top:5%;
-  width: 500px;
-  height:250px;
-  border: 2px solid rgb(229, 0, 126);
+  color: rgb(255, 152, 9); /* Couleur du texte pour la classe "administrateur" */
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
 }
 
-#right {/* cadre checkbox*/
-  margin: 0 auto;
-  padding-left: 80%;
-  width: auto;
-  margin-top: -300px;
-  }
+.jesuis {
+  text-align: end; /* Aligne le texte à droite */
+  color: rgb(255, 255, 255); /* Couleur du texte en blanc */
+  margin-right: 10%; /* Marge à droite de 10% */
+  font-size: 20px; /* Taille de la police de caractères */
+}
 
-#main input{
-  border: none; /* Cache la bordure */
-  border-bottom: 2.5px dotted rgb(229, 0, 126); /* Ajoute une bordure inférieure pointillée et change la couleur des pointillés */
-  width: 290px;
+h2 {
+  text-align: center; /* Centre le texte horizontalement */
+  color: rgb(229, 0, 126); /* Couleur du texte */
+}
+
+fieldset {
+  background-color: rgb(255, 255, 255); /* Couleur de fond du fieldset */
+  position: relative; /* Positionnement relatif */
+  z-index: 1; /* Indice de profondeur pour placer les éléments devant l'image */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement */
+  margin-left: 32.5%; /* Marge à gauche de 32.5% */
+  margin-top: 5%; /* Marge en haut de 5% */
+  width: 500px; /* Largeur du fieldset */
+  height: 250px; /* Hauteur du fieldset */
+  border: 2px solid rgb(229, 0, 126); /* Bordure de 2px solide avec une couleur spécifique */
+}
+
+#right {
+  /* cadre checkbox */
+  margin: 0 auto; /* Centre horizontalement */
+  padding-left: 80%; /* Décalage à gauche de 80% */
+  width: auto; /* Largeur automatique */
+  margin-top: -300px; /* Décalage en haut de 300px (pour positionner le cadre checkbox) */
+}
+
+#main input {
+  border: none; /* Supprime la bordure des champs de saisie */
+  border-bottom: 2.5px dotted rgb(229, 0, 126); /* Ajoute une bordure inférieure pointillée avec une couleur spécifique */
+  width: 290px; /* Largeur du champ de saisie */
 }
 
 #main input:focus {
-  outline: none; /* Supprime la bordure de mise en évidence lors de la mise au point */
-  flex:1;
+  outline: none; /* Supprime le contour lorsqu'un champ de saisie est en focus */
+  flex: 1; /* Ajoute une flexibilité pour s'adapter au contenu */
 }
 
 .background-logo {
-  position: absolute;
-  z-index: -1;
-  width: 50%;
-  height: 80%;
-  left: 300px; /* Déplace l'image de 100px vers la droite */
-  top: 100px; /* Déplace l'image de 100px vers le bas */
-  margin-top: 398px;
-}
-.titlecheck{
-  width: 171px;
-  height: 30px;
-  background: linear-gradient(to left,rgb(230, 0, 126),rgb(249,213,231));
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  right: 0%;
+  position: absolute; /* Positionnement absolu */
+  z-index: -1; /* Indice de profondeur pour placer l'image en arrière-plan */
+  width: 50%; /* Largeur de l'image */
+  height: 80%; /* Hauteur de l'image */
+  left: 300px; /* Décalage à gauche de 300px */
+  top: 100px; /* Décalage en haut de 100px */
+  margin-top: 398px; /* Décalage en haut de 398px (pour ajuster la position) */
 }
 
-#field_checkbox{
-  margin-top: -15%;
-  width: 150px;
-  height: 300px;
-  background:linear-gradient(to top, rgb(243, 211, 227),rgb(255, 255, 255));
-  border: none;
+.titlecheck {
+  width: 171px; /* Largeur du titre */
+  height: 30px; /* Hauteur du titre */
+  background: linear-gradient(to left, rgb(230, 0, 126), rgb(249, 213, 231)); /* Dégradé linéaire de couleurs de fond */
+  position: absolute; /* Positionnement absolu */
+  top: 0%; /* Décalage en haut de 0% */
+  left: 0%; /* Décalage à gauche de 0% */
+  right: 0%; /* Décalage à droite de 0% */
 }
-small{
-  color:rgb(230, 0, 126);
-  margin-left: 40%;
+
+#field_checkbox {
+  margin-top: -15%; /* Décalage en haut de 15% (pour positionner le champ de checkbox) */
+  width: 150px; /* Largeur du champ de checkbox */
+  height: 300px; /* Hauteur du champ de checkbox */
+  background: linear-gradient(to top, rgb(243, 211, 227), rgb(255, 255, 255)); /* Dégradé linéaire de couleurs de fond */
+  border: none; /* Supprime la bordure */
+}
+
+small {
+  color: rgb(230, 0, 126); /* Couleur du texte en rouge */
+  margin-left: 40%; /* Marge à gauche de 40% */
 }
 
 .btn {
-  background:rgb(230, 0, 126);
-  display: inline-block;
-  font-size: 18px;
-  padding: 8px 25px;
-  margin-left:45%;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-  border: none;
+  background: rgb(230, 0, 126); /* Couleur de fond du bouton */
+  display: inline-block; /* Affiche le bouton en tant que bloc */
+  font-size: 18px; /* Taille de la police de caractères */
+  padding: 8px 25px; /* Espacement interne du bouton */
+  margin-left: 45%; /* Marge à gauche de 45% */
+  cursor: pointer; /* Curseur au survol du bouton */
+  text-align: center; /* Centre le texte du bouton */
+  text-decoration: none; /* Supprime le soulignement du texte */
+  outline: none; /* Supprime le contour du bouton */
+  color: #ffffff; /* Couleur du texte en blanc */
+  border: none; /* Supprime la bordure du bouton */
 }
 
-#text_field{
-  color: rgb(230, 0, 126);
-  font-size: 18px;
+#text_field {
+  color: rgb(230, 0, 126); /* Couleur du texte en rouge */
+  font-size: 18px; /* Taille de la police de caractères */
 }
 
 #text-input {
-  font-size: 20px;
-  color: rgb(42, 32, 110); /* Couleur initiale du texte */
-  font-family: "Brush Script MT", cursive;
+  font-size: 20px; /* Taille de la police de caractères */
+  color: rgb(42, 32, 110); /* Couleur du texte */
+  font-family: "Brush Script MT", cursive; /* Police de caractères */
 }
 
-
 .menu .submenu {
-  display: none;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ddd;
-  position: absolute;
-  margin-top: 5px;
-  z-index: 2;
+  display: none; /* Masque le sous-menu */
+  background-color: #f9f9f9; /* Couleur de fond du sous-menu */
+  padding: 10px; /* Espacement interne du sous-menu */
+  border: 1px solid #ddd; /* Bordure du sous-menu */
+  position: absolute; /* Positionnement absolu */
+  margin-top: 5px; /* Marge en haut de 5px */
+  z-index: 2; /* Indice de profondeur pour placer le sous-menu devant les autres éléments */
 }
 
 .menu .menuj:hover .submenu {
-  display: block;
+  display: block; /* Affiche le sous-menu lorsque le menu est survolé */
 }
 
 .menu .submenu li {
-  display: block;
-  margin-bottom: 5px;
+  display: block; /* Affiche les éléments du sous-menu en bloc */
+  margin-bottom: 5px; /* Marge inférieure de 5px entre les éléments du sous-menu */
 }
 
 .menu .submenu li a {
-  color:rgb(230, 0, 126);
-  text-decoration: none;
+  color: rgb(230, 0, 126); /* Couleur du texte des liens du sous-menu */
+  text-decoration: none; /* Supprime le soulignement des liens du sous-menu */
 }
-
