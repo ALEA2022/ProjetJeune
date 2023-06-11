@@ -2,9 +2,7 @@
 session_start();
 
 if (isset($_SESSION["user_email"])) { // Vérifie si la variable de session "user_email" existe
-    echo "L'utilisateur connecté est : " . $_SESSION["user_email"]; // Affiche l'email de l'utilisateur connecté
 } else {
-    echo "Personne n'est connecté."; // Affiche un message indiquant que personne n'est connecté
 }
 ?>
 
