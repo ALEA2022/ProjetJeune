@@ -176,7 +176,7 @@ $target_dir = "uploads/";
 if(isset($_SESSION["user_email"])) {
 $user_email = $_SESSION["user_email"];
 } else {
-echo "Veuillez vous connecter pour télécharger un fichier."; <!-- Message d'erreur pour l'utilisateur non connecté -->
+echo "Veuillez vous connecter pour télécharger un fichier."; 
 exit();
 }
 if (!file_exists($target_dir)) {
