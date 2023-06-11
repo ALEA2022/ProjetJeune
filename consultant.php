@@ -20,7 +20,7 @@ if (isset($data[$lignejeune - 1])) {
     echo "La ligne demandée n'existe pas dans le fichier CSV.";
 }
 
-
+// récupration des données du jeunes à partir du fichier tmp.csv
 echo $lignejeune;
 
 
@@ -59,6 +59,7 @@ if (isset($data[$ligneref - 1])) {
     echo "La ligne demandée n'existe pas dans le fichier CSV.";
 }
 
+// récupration des données du référent à partir du fichier refCombined.csv
 echo $ligneref;
 
 $userData = $data[$ligneref - 1];
