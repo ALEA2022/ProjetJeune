@@ -17,9 +17,9 @@
 session_start();
 
 if (isset($_SESSION["user_email"])) {
-    echo "L'utilisateur connecté est : " . $_SESSION["user_email"];
+   
 } else {
-    echo "Personne n'est connecté.";
+    
 }
 ?>
 
@@ -157,8 +157,6 @@ fclose($fileCombined);
         fputcsv($file, $data);
     }
     fclose($file);
-
-    echo "Compte mis à jour avec succès!";
 
 
 
