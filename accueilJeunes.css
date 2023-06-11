@@ -1,0 +1,139 @@
+.centered-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: -20%;
+}
+
+
+.styled-table {
+    background: rgb(232, 191, 209); /* Couleur de fond du tableau */
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+
+
+.btn {
+    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px ;
+    margin-left:42.5%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu .submenu {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: absolute;
+    margin-top: 5px;
+  }
+  
+  .menu .menuj:hover .submenu {
+    display: block;
+  }
+  
+  .menu .submenu li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .menu .submenu li a {
+    color:rgb(230, 0, 126);
+    text-decoration: none;
+  }
+  button{
+    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px ;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .button-container {
+    display: flex;
+  }
+  
+  .button-container > * {
+    margin-right: 10px;
+    
+  }
+
+
+  .body-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    margin-top: -20%;
+    
+}
+
+.email-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #e1e0e0;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.email-form input[type="text"] {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e8e8e8;
+}
+
+.email-form .submit-button {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+    color: white;
+    cursor: pointer;
+}
+
+.email-form .submit-button:hover {
+  background:linear-gradient(to left,  rgb(197, 1, 109),rgb(232, 191, 209));
+}
+
+h3{
+  color: rgb(197, 1, 109);
+  margin-left: 64%;
+  margin-top: -15%;
+
+}
+
+.consultationtitle{
+  color: rgb(197, 1, 109);
+  margin-left: 2%;
+  margin-top: -1%;
+  margin-bottom: 1%;
+
+}
