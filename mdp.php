@@ -13,7 +13,11 @@
             <h4><i>Entrez votre mail</i></h4>
             <br><br> <br>
             <input type="text" name="email" placeholder="Email"><br>
-            <input name="submit" type="submit" value="Envoyer">
+            <input name="submit" type="submit" value="Envoyer"><br>
+            <form action="connex.php" method="post">
+            <input type="submit" name="connex" value="Se connecter"><br>
+            </form>
+
         </form><br>
     </div>
     <?php
@@ -23,6 +27,11 @@
     
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
+    if (isset($_POST['connex'])) {
+        header('Location:connex.php');
+    }
+
+
     if (isset($_POST['submit'])) {
         $email = $_POST['email'];
         // Ouvrir le fichier CSV en lecture
