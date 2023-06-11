@@ -5,7 +5,6 @@ session_start();
 if(isset($_SESSION["unique_id"])) {
     $searchId = $_SESSION["unique_id"];
 } else {
-    echo "L'identifiant unique n'est pas défini dans la session.";
     exit();
 }
 
@@ -23,7 +22,6 @@ while (($line = fgetcsv($file)) !== FALSE) {
     // Vérifier si l'identifiant unique est dans la dernière colonne de cette ligne
     $lastData = end($line);
     if ($lastData == $searchId) {
-        echo "L'identifiant unique se trouve à la ligne " . $lineNumber;
         break;
     }
 }
