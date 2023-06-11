@@ -175,7 +175,7 @@ Durée: <input type="text" name="duree" value="<?php echo $dureeref; ?>" readonl
 </div>
 <img src="logobleu2.png" class="background-logo" > <!-- Image avec chemin d'accès et classe background-logo -->
 <?php
-$target_dir = "uploads/"; <!-- Répertoire de destination pour les fichiers téléchargés -->
+$target_dir = "uploads/"; 
 // Obtenez l'e-mail de l'utilisateur à partir de la session
 if(isset($_SESSION["user_email"])) {
 $user_email = $_SESSION["user_email"];
