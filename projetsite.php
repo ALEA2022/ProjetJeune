@@ -168,9 +168,9 @@
           </div>
         </div>
       
-         <a href="crea.php" class="btn" id="signup">Inscription</a>
+         <a href="crea.php" class="btn" id="signup">Inscription</a><!-- Lien vers la page d'inscription -->
          
-         <a href="connex.php" class="btn" id="signin">Connexion</a>
+         <a href="connex.php" class="btn" id="signin">Connexion</a><!-- Lien vers la page de connexion -->
 
 
   </body>
