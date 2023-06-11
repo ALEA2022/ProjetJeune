@@ -1,3 +1,4 @@
+/* Centre le tableau horizontalement et verticalement */
 .centered-table {
     display: flex;
     justify-content: center;
@@ -6,7 +7,7 @@
     margin-top: -20%;
 }
 
-
+/* Style du tableau */
 .styled-table {
     background: rgb(232, 191, 209); /* Couleur de fond du tableau */
     border-collapse: collapse;
@@ -18,14 +19,13 @@
     padding: 8px;
 }
 
-
-
+/* Style du bouton */
 .btn {
-    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+    background: linear-gradient(to left, rgb(230, 0, 126), rgb(232, 191, 209));
     display: inline-block;
     font-size: 18px;
-    padding: 8px ;
-    margin-left:42.5%;
+    padding: 8px;
+    margin-left: 42.5%;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -33,35 +33,38 @@
     color: #ffffff;
     border: none;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
+}
 
-  .menu .submenu {
+/* Style du menu déroulant */
+.menu .submenu {
     display: none;
     background-color: #f9f9f9;
     padding: 10px;
     border: 1px solid #ddd;
     position: absolute;
     margin-top: 5px;
-  }
-  
-  .menu .menuj:hover .submenu {
+}
+
+.menu .menuj:hover .submenu {
     display: block;
-  }
-  
-  .menu .submenu li {
+}
+
+.menu .submenu li {
     display: block;
     margin-bottom: 5px;
-  }
-  
-  .menu .submenu li a {
-    color:rgb(230, 0, 126);
+}
+
+.menu .submenu li a {
+    color: rgb(230, 0, 126);
     text-decoration: none;
-  }
-  button{
-    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+}
+
+/* Style du bouton */
+button {
+    background: linear-gradient(to left, rgb(230, 0, 126), rgb(232, 191, 209));
     display: inline-block;
     font-size: 18px;
-    padding: 8px ;
+    padding: 8px;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -69,18 +72,19 @@
     color: #ffffff;
     border: none;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  }
-  .button-container {
+}
+
+/* Style du conteneur des boutons */
+.button-container {
     display: flex;
-  }
-  
-  .button-container > * {
+}
+
+.button-container > * {
     margin-right: 10px;
-    
-  }
+}
 
-
-  .body-container {
+/* Style du conteneur principal */
+.body-container {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,9 +92,9 @@
     margin: 0;
     padding: 20px;
     margin-top: -20%;
-    
 }
 
+/* Style du formulaire d'e-mail */
 .email-form {
     display: flex;
     flex-direction: column;
@@ -98,7 +102,7 @@
     padding: 20px;
     border-radius: 10px;
     background-color: #e1e0e0;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
 .email-form input[type="text"] {
@@ -114,26 +118,24 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+    background: linear-gradient(to left, rgb(230, 0, 126), rgb(232, 191, 209));
     color: white;
     cursor: pointer;
 }
 
 .email-form .submit-button:hover {
-  background:linear-gradient(to left,  rgb(197, 1, 109),rgb(232, 191, 209));
+    background: linear-gradient(to left, rgb(197, 1, 109), rgb(232, 191, 209));
 }
 
-h3{
-  color: rgb(197, 1, 109);
-  margin-left: 64%;
-  margin-top: -15%;
-
+h3 {
+    color: rgb(197, 1, 109);
+    margin-left: 64%;
+    margin-top: -15%;
 }
 
-.consultationtitle{
-  color: rgb(197, 1, 109);
-  margin-left: 2%;
-  margin-top: -1%;
-  margin-bottom: 1%;
-
+.consultationtitle {
+    color: rgb(197, 1, 109);
+    margin-left: 2%;
+    margin-top: -1%;
+    margin-bottom: 1%;
 }
