@@ -1,109 +1,88 @@
 .centered-form {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: 100vh;
-  margin-top: 5%;
-}
-
-/* La classe .centered-form centre le contenu du formulaire et définit sa hauteur */
-
-.form-container {
-  margin-bottom: 20px;
-}
-
-/* La classe .form-container ajoute une marge en bas pour séparer les éléments du formulaire */
-
-.btn {
-  background: linear-gradient(to left, rgb(230, 0, 126), rgb(232, 191, 209));
-  display: inline-block;
-  font-size: 18px;
-  padding: 8px;
-  margin-left: 0%;
-  cursor: pointer;
-  text-align: left;
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-  border: solid rgb(230, 0, 126);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-}
-
-/* La classe .btn définit le style d'un bouton avec un dégradé de couleur, une bordure et une ombre */
-
-.btnT {
-  background:linear-gradient(to top,  rgb(251, 159, 193),rgb(245, 211, 228));
-  display: inline-block;
-  font-size: 18px;
-  padding: 8px ;
-  margin-left:0%;
-  cursor: pointer;
-  text-align:left;
-  text-decoration: none;
-  outline: none;
-  color: #ffffff;
-  border: none;
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* La classe .btnT définit le style du bouton téléchargement avec un dégradé de couleur différent */
-
-input[type="text"],
-input[type="password"] {
-  border: none;
-  background: transparent;
-  padding: 5px;
-  outline: none;
-}
-
-/* Les styles des champs de saisie de texte et de mot de passe, avec une bordure, un fond transparent et un retrait */
-
-.message {
-  color: rgb(230, 0, 126); /* Couleur du texte */
-  font-size: 20px; /* Taille de la police */
-  margin-top: -28%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 5%;
+  }
+  
+  
+ 
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    background: linear-gradient(to left, rgb(230, 0, 126), rgb(232, 191, 209));
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px;
+    margin-left: 0%;
+    cursor: pointer;
+    text-align: left;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: solid rgb(230, 0, 126);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  }
+  
+  
+  .btnT {
+    background:linear-gradient(to top,  rgb(251, 159, 193),rgb(245, 211, 228));
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px ;
+    margin-left:0%;
+    cursor: pointer;
+    text-align:left;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  input[type="text"], input[type="password"] {
+    border: none;
+    background: transparent;
+    padding: 5px;
+    outline: none;
+  }
+  
+  .message {
+    color: rgb(230, 0, 126); /* Couleur du texte */
+    font-size: 20px; /* Taille de la police */
+    margin-top: -28%;
   text-align: center;
-}
+  }
+  
+  h3{
+    color: rgb(230, 0, 126);
+    text-align: center;
+    font-size: 25px;
+  }
 
-/* Les styles pour un message avec une couleur, une taille de police et une marge spécifiques */
-
-h3 {
-  color: rgb(230, 0, 126);
-  text-align: center;
-  font-size: 25px;
-}
-
-/* Les styles pour un titre avec une couleur, un alignement et une taille de police spécifiques */
-
-.menu .submenu {
-  display: none;
-  background-color: #f9f9f9;
-  padding: 10px;
-  border: 1px solid #ddd;
-  position: absolute;
-  margin-top: 5px;
-}
-
-/* Les styles pour un sous-menu qui est initialement masqué avec un fond, un rembourrage et une bordure */
-
-.menu .menuj:hover .submenu {
-  display: block;
-}
-
-/* Les styles pour afficher le sous-menu lorsque le menu parent est survolé */
-
-.menu .submenu li {
-  display: block;
-  margin-bottom: 5px;
-}
-
-/* Les styles pour les éléments de la liste du sous-menu */
-
-.menu .submenu li a {
-  color: rgb(230, 0, 126);
-  text-decoration: none;
-}
-
-/* Les styles pour les liens dans le sous-menu avec une couleur spécifique */
-
+  .menu .submenu {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: absolute;
+    margin-top: 5px;
+  }
+  
+  .menu .menuj:hover .submenu {
+    display: block;
+  }
+  
+  .menu .submenu li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .menu .submenu li a {
+    color:rgb(230, 0, 126);
+    text-decoration: none;
+  }
+  
