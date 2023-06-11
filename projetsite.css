@@ -1,301 +1,294 @@
-.top-bar {
-  /* Barre supérieure */
-  background-color: gray; /* Couleur de fond */
-  padding: 80px; /* Espacement intérieur */
-  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Dégradé linéaire de couleurs */
-  top: 0%; /* Position en haut de la page */
-}
 
-.menu {
-  /* Menu principal */
-  list-style-type: none; /* Suppression des puces de liste */
-  padding: 0; /* Suppression des marges internes */
-  margin: 0; /* Suppression des marges externes */
-}
+  .top-bar {/**/
+    background-color: gray;
+    padding: 80px;
+    background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+    top:0%;
+  }
+  .menu {/**/
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .pink-button {
+    background-color: pink;
+    color: white;
+  }
+  
+  .green-button {
+    background-color: green;
+    color: white;
+  }
+  
+  .blue-button {
+    background-color: blue;
+    color: white;
+  }
+  
+  .gray-button {
+    background-color: gray;
+    color: white;
+  }
+  .menu-container {
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .footer-text{
+     position: absolute;
+        top: 10;
+        right: 70px;
+        color:white;
+        font-size: 40px;
+        margin-top: 0%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      
+      .element img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 245px; 
+        height: auto;
+       
+      }
+  
+      .menu {
+        display: flex;                /* Transformation en flexbox */
+        padding:0;                    /* Suppression des marges internes */
+            /* Ajout de la couleur d'arrière-plan */
+        justify-content:center;/* Alignements des liens dans le menu */
+    }
+    .menu li {
+        list-style-type: none ;       /* Suppression des puces */
+        background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+    }
+    .menu a {
+        display:block;                /* Transformation en block */
+        min-width: 120px;             /* Largeur minimale des liens */   
+        
+        margin: 0.3rem;               /* Marges externes */
+        padding: 0.4rem 0;            /* Marges internes */
+        text-align: center;           /* Centrage du texte */   
+           /* Arrière-plan */
+         background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244));               /* Couleur du texte */
+        text-decoration: none;        /* Suppression du soulignement */
+               /* Ajout d'une bordure */
+                 /* Arrondis des bordures */
+       
+        transition: all 1s ;          /* Ajout des effets de transition */
+    }
+    .menuj a.actif {    
+        background-color: #000 ; 
+        color: #1ABC9C ;
+        border-color: #1ABC9C ;
+    }
+    .menuj a:hover,/*hover: change couleur lorsque la souris passe au dessus du titre du menu*/
+    .menuj a:hover.actif{
+        color:rgb(123, 3, 69);
+        border-color:rgb(229, 0, 126);
+    }
+    .menur a:hover,
+    .menur a:hover.actif{
+       
+        color:rgb(12, 108, 38);
+        border-color: rgb(19, 165, 57);
+    }
+    .menuc a:hover,
+    .menuc a:hover.actif{
+        
+        color:  rgb(2, 87, 123);
+        border-color:rgb(0, 159,227);
+    }
+    .menup a:hover,
+    .menup a:hover.actif{
+        color:rgb(70, 69, 71);
+        border-color: rgb(112, 111, 116);
+    }
+    .menua a:hover,
+    .menua a:hover.actif{
+        color:rgb(181, 56, 10);
+        border-color:rgb(229, 0, 126);
+    }
 
-.menu li {
-  /* Éléments du menu */
-  display: inline-block; /* Affichage en ligne */
-}
-
-.menu li a {
-  /* Liens du menu */
-  display: inline-block; /* Affichage en ligne */
-  padding: 10px 20px; /* Espacement intérieur */
-  text-decoration: none; /* Suppression du soulignement */
-  font-weight: bold; /* Police en gras */
-}
-
-.menu-container {
-  /* Conteneur du menu */
-  text-align: center; /* Alignement centré */
-}
-
-.footer-text {
-  /* Texte du pied de page */
-  position: absolute; /* Position absolue */
-  top: 10; /* Décalage par rapport au haut */
-  right: 70px; /* Décalage par rapport à la droite */
-  color: white; /* Couleur du texte */
-  font-size: 40px; /* Taille de police */
-  margin-top: 0%; /* Marge supérieure */
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractères */
-}
-
-.element img {
-  /* Image */
-  position: absolute; /* Position absolue */
-  top: 0; /* Décalage par rapport au haut */
-  left: 0; /* Décalage par rapport à la gauche */
-  width: 245px; /* Largeur de l'image */
-  height: auto; /* Hauteur automatique en conservant les proportions */
-}
-
-.menu {
-  /* Menu principal avec transformation en flexbox */
-  display: flex; /* Transformation en flexbox */
-  padding: 0; /* Suppression des marges internes */
-  justify-content: center; /* Alignement centré des liens dans le menu */
-}
-
-.menu li {
-  /* Éléments du menu */
-  list-style-type: none; /* Suppression des puces de liste */
-  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Dégradé linéaire de couleurs */
-}
-
-.menu a {
-  /* Liens du menu */
-  display: block; /* Transformation en bloc */
-  min-width: 120px; /* Largeur minimale des liens */
-  margin: 0.3rem; /* Marges externes */
-  padding: 0.4rem 0; /* Marges internes */
-  text-align: center; /* Alignement centré du texte */
-  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Dégradé linéaire de couleurs */
-  text-decoration: none; /* Suppression du soulignement */
-  transition: all 1s; /* Ajout des effets de transition */
-}
-
-.menuj a.actif {
-  /* Lien actif dans la catégorie "Jeunes" */
-  background-color: #000;
-  color: #1ABC9C;
-  border-color: #1ABC9C;
-}
-
-.menuj a:hover,
-.menuj a:hover.actif {
-  /* Lien "Jeunes" survolé ou actif */
-  color: rgb(123, 3, 69);
-  border-color: rgb(229, 0, 126);
-}
-
-.menur a:hover,
-.menur a:hover.actif {
-  /* Lien "Referent" survolé ou actif */
-  color: rgb(12, 108, 38);
-  border-color: rgb(19, 165, 57);
-}
-
-.menuc a:hover,
-.menuc a:hover.actif {
-  /* Lien "Consultant" survolé ou actif */
-  color: rgb(2, 87, 123);
-  border-color: rgb(0, 159, 227);
-}
-
-.menup a:hover,
-.menup a:hover.actif {
-  /* Lien "Partenaires" survolé ou actif */
-  color: rgb(70, 69, 71);
-  border-color: rgb(112, 111, 116);
-}
-
-.menua a:hover,
-.menua a:hover.actif {
-  /* Lien "Administrateur" survolé ou actif */
-  color: rgb(181, 56, 10);
-  border-color: rgb(229, 0, 126);
-}
-
-.jeunes {
-  /* Texte de couleur rouge pour la catégorie "Jeunes" */
+   .jeunes {
   color: rgb(229, 0, 126);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .referent {
-  /* Texte de couleur verte pour la catégorie "Referent" */
   color: rgb(19, 165, 57);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .consultant {
-  /* Texte de couleur bleue pour la catégorie "Consultant" */
-  color: rgb(0, 159, 227);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
+  color: rgb(0, 159,227);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .partenaires {
-  /* Texte de couleur grise pour la catégorie "Partenaires" */
   color: rgb(112, 111, 116);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
 .administrateur {
-  /* Texte de couleur orange pour la catégorie "Administrateur" */
-  color: rgb(255, 152, 9);
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
-}
+    color: rgb(255, 152, 9);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
 
 .container {
-  /* Conteneur principal */
-  display: flex; /* Transformation en flexbox */
-  align-items: flex-start; /* Alignement des éléments en haut */
-  height: 30vh; /* Hauteur du conteneur */
-}
+    display: flex;
+    align-items:flex-start;
+    height: 30vh;
+  }
 
-.left,
-.center,
-.right {
-  /* Textes de gauche, du centre et de droite */
-  margin: 0 70px; /* Marges horizontales */
-  color: rgb(112, 111, 116); /* Couleur du texte */
-  text-align: justify; /* Alignement justifié */
-  margin-bottom: 20px; /* Marge inférieure */
-}
+  .left, .center, .right {
+  margin: 0 70px;
+  color:  rgb(112, 111, 116);
+  text-align: justify;
+  margin-bottom: 20px;
+  }
 
-.frame-container {
-  /* Conteneur des cadres */
-  display: flex; /* Transformation en flexbox */
-  justify-content: center; /* Alignement centré */
-  align-items: center; /* Alignement centré */
-  flex-wrap: wrap; /* Retour à la ligne des éléments */
-  margin-bottom: 20px; /* Marge inférieure */
-}
+  .frame-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .frame {
+    width: 200px;
+    height: 200px;
+    background-color: #eaeaea;
+    margin: 10px;
+    position: relative;
+    
+  }
 
-.frame {
-  /* Cadre */
-  width: 200px; /* Largeur du cadre */
-  height: 200px; /* Hauteur du cadre */
-  background-color: #eaeaea; /* Couleur de fond */
-  margin: 10px; /* Marges externes */
-  position: relative; /* Position relative pour les éléments internes */
-}
+  .inner-frame {
+    width: 200px;
+    height: 100px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+  
+  }
+  .frame-1 {
+    border: 4px solid rgb(229, 0, 126); /* Bordure rouge */
+    background:linear-gradient(to left,rgb(252, 231, 241),rgb(254,246,250)); 
+  }
+  
+  .frame-2 {
+    border: 4px solid rgb(19, 165, 57); /* Bordure verte */
+    background:linear-gradient(to left,rgb(221, 229, 107),rgb(248,250,224));
+  }
+  
+  .frame-3 {
+    border: 4px solid  rgb(0, 159,227); /* Bordure bleue */
+    background:linear-gradient(to left,rgb(189, 230, 250),rgb(246,252,254));
+  }
 
-.inner-frame {
-  /* Cadre interne */
-  width: 200px; /* Largeur du cadre interne */
-  height: 100px; /* Hauteur du cadre interne */
-  background-color: #ffffff; /* Couleur de fond */
-  position: absolute; /* Position absolue par rapport au cadre */
-  top: 0%; /* Position en haut du cadre */
-  left: 0%; /* Position à gauche du cadre */
-  right: 0%; /* Position à droite du cadre */
-}
-
-.frame-1 {
-  /* Cadre de type 1 avec bordure rouge */
-  border: 4px solid rgb(229, 0, 126); /* Bordure rouge */
-  background: linear-gradient(to left, rgb(252, 231, 241), rgb(254, 246, 250)); /* Dégradé linéaire de couleurs */
-}
-
-.frame-2 {
-  /* Cadre de type 2 avec bordure verte */
-  border: 4px solid rgb(19, 165, 57); /* Bordure verte */
-  background: linear-gradient(to left, rgb(221, 229, 107), rgb(248, 250, 224)); /* Dégradé linéaire de couleurs */
-}
-
-.frame-3 {
-  /* Cadre de type 3 avec bordure bleue */
-  border: 4px solid rgb(0, 159, 227); /* Bordure bleue */
-  background: linear-gradient(to left, rgb(189, 230, 250), rgb(246, 252, 254)); /* Dégradé linéaire de couleurs */
-}
-
-.inner-frame-1 {
-  /* Cadre interne de type 1 avec couleur rouge clair */
-  background: linear-gradient(to left, rgb(230, 0, 126), rgb(249, 213, 231)); /* Couleur intérieure rouge clair */
-}
-
-.inner-frame-2 {
-  /* Cadre interne de type 2 avec couleur verte clair */
-  background: linear-gradient(to left, rgb(19, 165, 56), rgb(195, 211, 13)); /* Couleur intérieure verte clair */
-}
-
-.inner-frame-3 {
-  /* Cadre interne de type 3 avec couleur bleu clair */
-  background: linear-gradient(to left, rgb(0, 159, 227), rgb(144, 212, 246)); /* Couleur intérieure bleu clair */
-}
-
-.frame-text {
-  /* Texte du cadre */
-  text-align: center; /* Alignement centré */
-  color: white; /* Couleur du texte */
-  font-size: 25px; /* Taille de police */
-  margin-top: 7%; /* Marge supérieure */
-}
-
-.frame-textb {
-  /* Texte du cadre pour les grands cadres */
-  text-align: center; /* Alignement centré */
-  color: rgb(112, 111, 116); /* Couleur du texte */
-  margin: 0; /* Marge externe */
-  padding: 20px; /* Marges internes */
-  margin-top: 45%; /* Marge supérieure */
-}
-
-.btn {
-  /* Bouton */
-  display: inline-block; /* Affichage en ligne */
-  font-size: 18px; /* Taille de police */
-  padding: 10px 20px; /* Espacement intérieur */
-  margin: 10px 2px; /* Marges externes */
-  cursor: pointer; /* Curseur de la souris */
-  text-align: center; /* Alignement centré */
-  text-decoration: none; /* Suppression du soulignement */
-  outline: none; /* Suppression du contour */
-  color: #afa8a8; /* Couleur du texte */
-  background: linear-gradient(to left, rgb(198, 198, 198), rgb(244, 244, 244)); /* Dégradé linéaire de couleurs */
-  border: none; /* Suppression de la bordure */
-  border-radius: 3px; /* Coins arrondis */
+  .inner-frame-1 {
+    background: linear-gradient(to left,rgb(230, 0, 126),rgb(249,213,231)); /* Couleur intérieure rouge clair */
+  }
+  
+  .inner-frame-2 {
+    background: linear-gradient(to left,rgb(19, 165, 56),rgb(195,211,13));/* Couleur intérieure verte clair */
+  }
+  
+  .inner-frame-3 {
+    background: linear-gradient(to left,rgb(0, 159,227),rgb(144,212,246)); /* Couleur intérieure bleu clair */
+  }
+  .frame-text {
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    margin-top: 7%;
+  }
+  .frame-textb {
+    text-align: center;
+    color:rgb(112, 111, 116); /* Couleur du texte pour les grands cadres */
+    margin: 0;
+    padding: 20px;
+    margin-top: 45%;
+  }
+  .btn {
+    display: inline-block;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px 2px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #afa8a8;
+    background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+    border: none;
+    border-radius: 3px;
 }
 
 #signup {
-  /* Bouton d'inscription */
-  position: absolute; /* Position absolue */
-  top: 22%; /* Décalage par rapport au haut */
-  left: 2%; /* Décalage par rapport à la gauche */
-  height: 2%; /* Hauteur du bouton */
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    height: 2%;
 }
 
 #signin {
-  /* Bouton de connexion */
-  position: absolute; /* Position absolue */
-  top: 22%; /* Décalage par rapport au haut */
-  left: 11%; /* Décalage par rapport à la gauche */
-  height: 2%; /* Hauteur du bouton */
+    position: absolute;
+    top: 22%;
+    left: 11%;
+    height: 2%;
 }
 
 .wrapper {
-  /* Conteneur global */
-  margin: 150px auto; /* Marges extérieures */
-  text-align: center; /* Alignement centré */
-  width: 100%; /* Largeur du conteneur */
-  position: relative; /* Position relative pour les éléments enfants */
+  margin: 150px auto;
+  text-align: center;
+  width: 100%;
+  position: relative;
 }
+
 
 .btn:hover::after {
-  /* Animation au survol du bouton */
-  width: 100%; /* Largeur totale */
+  width:100%;
 }
-
-.btn:hover {
-  /* Effet de survol du bouton */
-  border-left: 1px solid #030507; /* Bordure gauche */
-  border-right: 1px solid #000102; /* Bordure droite */
+.btn:hover{
+  border-left:1px solid #030507;
+  border-right:1px solid #000102;
 }
 
 .forbidden-cursor {
-  /* Curseur interdit */
   cursor: not-allowed;
 }
