@@ -1,0 +1,100 @@
+/* Styles pour la barre du haut */
+.top-bar {
+    background-color: gray; /* Couleur d'arrière-plan de la barre */
+    padding: 70px; /* Espace interne de la barre */
+    background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); /* Dégradé d'arrière-plan */
+}
+
+/* Styles pour le menu */
+.menu {
+    list-style-type: none; /* Supprime les puces des listes */
+    padding: 0; /* Supprime l'espace interne */
+    margin:0; /* Supprime la marge */
+}
+
+/* Styles pour les éléments de la liste du menu */
+.menu li {
+    display: inline-block; /* Les éléments de la liste sont disposés horizontalement */
+}
+
+/* Styles pour les liens dans le menu */
+.menu li a {
+    display: inline-block; /* Les liens sont disposés horizontalement */
+    padding: 10px 20px; /* Ajoute de l'espace autour du texte des liens */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    font-weight: bold; /* Met le texte en gras */
+}
+
+/* Styles pour le texte en bas de page */
+.footer-text{
+    position: absolute; /* Positionnement absolu */
+    top: 10; /* Position depuis le haut de la page */
+    right: 70px; /* Position depuis le côté droit de la page */
+    color:white; /* Couleur du texte en blanc */
+    font-size: 40px; /* Taille du texte */
+    margin-top: 0%; /* Marge supérieure */
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police de caractères */
+}
+
+/* Styles pour l'image dans .element */
+.element img {
+    position: absolute; /* Positionnement absolu */
+    top: 0; /* Position depuis le haut de la page */
+    left: 0; /* Position depuis le côté gauche de la page */
+    width: 245px; /* Largeur de l'image */
+    height: auto; /* Hauteur automatique (maintient les proportions de l'image) */
+}
+
+/* Styles pour le menu */
+.menu {
+    display: flex; /* Transforme en flexbox */
+    padding:0; /* Supprime l'espace interne */
+    justify-content:center; /* Centre les éléments horizontalement */
+}
+
+/* Styles pour les liens dans le menu lorsqu'ils sont survolés */
+.menuj a:hover, .menur a:hover, .menuc a:hover, .menup a:hover, .menua a:hover {
+    border-color:rgb(229, 0, 126); /* Couleur de la bordure lors du survol */
+}
+
+/* Styles spécifiques pour chaque type de lien dans le menu */
+.jeunes, .referent, .consultant, .partenaires, .administrateur {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; /* Police de caractères */
+}
+
+.jeunes {
+  color: rgb(229, 0, 126); /* Couleur du texte */
+}
+
+.referent {
+  color: rgb(19, 165, 57); /* Couleur du texte */
+}
+
+.consultant {
+  color: rgb(0, 159,227); /* Couleur du texte */
+}
+
+.partenaires {
+  color: rgb(112, 111, 116); /* Couleur du texte */
+}
+
+.administrateur {
+    color: rgb(255, 152, 9); /* Couleur du texte */
+}
+
+/* Styles pour le conteneur de l'image */
+.positionimg{
+    display: flex; /* Transforme en flexbox */
+    justify-content: center; /* Centre l'image horizontalement */
+}
+
+/* Styles pour l'image dans .positionimg */
+.positionimg img {
+    width: 80%; /* Largeur de l'image à 80% */
+}
+
+/* Styles pour les titres h3 et h4 */
+h3, h4{
+    color: rgb(112, 111, 116); /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+}
