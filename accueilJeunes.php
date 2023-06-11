@@ -105,7 +105,7 @@ if (isset($_POST['consultant_email']) && isset($_POST['referent_email'])) {
     $consultantEmail = $_POST['consultant_email'];
     $referentEmail = $_POST['referent_email'];   
     // Les adresses e-mail du consultant et du référent sont maintenant stockées dans $consultantEmail et $referentEmail
-    // Vous pouvez les utiliser comme bon vous semble
+ 
 }
 
 $file1 = fopen('tmp.csv', 'r');
