@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-// Obtenez l'identifiant unique à partir de la session
+// Obtenir l'identifiant unique à partir de la session
 if(isset($_SESSION["unique_id"])) {
     $searchId = $_SESSION["unique_id"];
 } else {
