@@ -1,0 +1,149 @@
+body {
+    /* Définir un dégradé de couleur comme fond pour l'élément 'body' */
+    background: linear-gradient(to left, rgb(102, 100, 100), rgb(244, 244, 244));
+    /* Ajuster la hauteur de l'élément 'body' pour qu'il occupe toute la hauteur de la fenêtre de visualisation */
+    height: 100vh;
+    /* Spécifier la police de caractères pour l'élément 'body' */
+    font-family: arial, sans-serif;
+    /* Utiliser flexbox pour centrer les éléments à l'intérieur de l'élément 'body' */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styles pour le conteneur du formulaire */
+.container {
+    position: relative;
+}
+
+/* Styles pour le logo */
+.logo {
+    position: absolute;
+    top: -140px; 
+    /* Centrer horizontalement le logo */
+    left: 50%;
+    transform: translateX(-50%);
+    /* Spécifier la largeur et la hauteur du logo */
+    width: 250px;
+    height: 155px;
+}
+
+/* Styles pour le formulaire */
+form {
+    /* Appliquer un fond blanc semi-transparent */
+    background: rgba(255, 255, 255, .3);
+    /* Ajouter un rembourrage autour du contenu du formulaire */
+    padding: 3rem;
+    /* Spécifier la hauteur et la largeur du formulaire */
+    height: 400px;
+    width:300px;
+    /* Arrondir les coins du formulaire */
+    border-radius: 20px;
+    /* Appliquer une bordure supérieure et gauche semi-transparente */
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    /* Appliquer un effet de flou à l'arrière-plan du formulaire */
+    backdrop-filter: blur(10px);
+    /* Appliquer une ombre au formulaire */
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, .2);
+    /* Centrer le texte dans le formulaire */
+    text-align: center;
+}
+
+/* Styles pour les éléments 'p' */
+p {
+    /* Définir la couleur, le poids, l'opacité et la taille du texte */
+    color: white;
+    font-weight: 500;
+    opacity: .7;
+    font-size: 1.4rem;
+    /* Ajouter une marge en dessous de chaque paragraphe */
+    margin-bottom: 60px;
+    /* Appliquer une ombre au texte */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+/* Styles pour les liens */
+a {
+    /* Enlever le soulignement des liens */
+    text-decoration: none;
+    /* Définir la couleur et la taille de la police des liens */
+    color: #797171;
+    font-size: 12px;
+}
+
+/* Styles pour les liens lorsqu'ils sont survolés */
+a:hover {
+    /* Appliquer une ombre au texte lorsque le lien est survolé */
+    text-shadow: 2px 2px 6px #00000040;
+}
+
+/* Styles pour les liens lorsqu'ils sont activés */
+a:active {
+    /* Supprimer l'ombre du texte lorsque le lien est activé */
+    text-shadow: none;
+}
+
+/* Styles pour les éléments 'input' */
+input {
+    /* Définir un fond transparent pour les entrées */
+    background: transparent;
+    /* Supprimer les bordures des entrées */
+    border: none;
+    /* Ajouter une bordure supérieure et gauche semi-transparente */
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    /* Ajouter du rembourrage autour du contenu des entrées */
+    padding: 1rem;
+    /* Spécifier la largeur des entrées */
+    width: 200px;
+    /* Arrondir les coins des entrées */
+    border-radius: 50px;
+    /* Appliquer un effet de flou à l'arrière-plan des entrées */
+    backdrop-filter: blur(5px);
+    /* Appliquer une ombre aux entrées */
+    box-shadow: 4px 4px 60px rgba(0, 0, 0, .2);
+    /* Définir la couleur, le poids et l'ombre du texte des entrées */
+    color: rgba(0, 0, 0, 0.736);
+    font-weight: 500;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+    /* Ajouter une transition à toutes les propriétés des entrées */
+    transition: all .3s;
+    /* Ajouter une marge en dessous des entrées */
+    margin-bottom: 2em;
+}
+
+/* Styles pour les éléments 'input' lorsqu'ils sont survolés et lorsqu'ils sont focus */
+input:hover,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    /* Modifier le fond et l'ombre lors du survol et du focus */
+    background: rgba(18, 17, 17, 0.1);
+    box-shadow: 4px 4px 60px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles pour l'entrée de type 'button' */
+input[type="button"] {
+    /* Ajouter une marge en haut de l'entrée */
+    margin-top: 10px;
+    /* Spécifier la largeur de l'entrée */
+    width: 150px;
+    /* Spécifier la taille de la police de l'entrée */
+    font-size: 1rem;
+    /* Transformer le curseur en pointeur lorsqu'il survole l'entrée */
+    cursor: pointer;
+}
+
+/* Styles pour les placeholders */
+::placeholder {
+    /* Définir la couleur du texte des placeholders */
+    color: #141414;
+}
+
+/* Styles pour les éléments 'h4' */
+h4{
+    /* Spécifier la taille de la police et la couleur du texte des éléments 'h4' */
+    font-size: 20px;
+    color: white;
+}
+
