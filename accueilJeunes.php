@@ -1,10 +1,6 @@
-
-
-
-
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Mon Site</title>
     <meta charset="UTF-8">
     <meta name="description" content="Description de mon site.">
@@ -12,82 +8,82 @@
     <link rel="stylesheet" href="jeunes.css">
     <link rel="stylesheet" href="accueilJeunes.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+</head>
+<body>
+    <!-- En-tête avec le texte "JEUNE" -->
+    <p class="footer-text"><span style="font-size: 80px; color: rgb(229, 0, 126)"; > JEUNE</p></span>
 
-  </head>
-  <p class="footer-text"><span style="font-size: 80px; color: rgb(229, 0, 126)"; > JEUNE</p></span>
-  <body>
-    
-      
-      <header class="top-bar">
+    <header class="top-bar">
         <div class="element">
-
-          <img src="logoJeunes.png" alt="Image">
+            <!-- Logo -->
+            <img src="logoJeunes.png" alt="Image">
         </div>
         <footer>
-          <p class="footer-text">Je donne de la valeur à mon engagement</p>
+            <!-- Texte de pied de page -->
+            <p class="footer-text">Je donne de la valeur à mon engagement</p>
         </footer>
-      </header>
-       
+    </header>
 
-        <ul class="menu">
-       
-          <li class="menuj">
+    <ul class="menu">
+        <!-- Liens du menu -->
+        <li class="menuj">
             <a href="jeunes.php" class="jeunes"><span style="background-color:rgb(229, 0, 126); color: white";>JEUNES</a>
-          </li>
-          <li class="menur">
+        </li>
+        <li class="menur">
             <a href="référent.php" class="referent">REFERENT</a>
-          </li>
-          <li class="menuc">
+        </li>
+        <li class="menuc">
             <a href="consultant.php" class="consultant">CONSULTANT</a>
-          </li>
-          <li class="menup">
+        </li>
+        <li class="menup">
             <a href="partenaires.php" class="partenaires">PARTENAIRES</a>
-          </li>
-          <li class="menua">
+        </li>
+        <li class="menua">
             <a href="administrateur.php" class="administrateur">ADMINISTRATEUR</a>
-          </li>
-        </ul>
-        
-        <h2>Décrivez votre experience et mettez en avant ce que vous en avez retiré.</h2>
-       
+        </li>
+    </ul>
 
-        <div class="consultationtitle"><b>Demande de consultation</b></div>
+    <h2>Décrivez votre expérience et mettez en avant ce que vous en avez retiré.</h2>
 
-            
-    <img src="logorose1.png" class="background-logo" >
+    <div class="consultationtitle"><b>Demande de consultation</b></div>
+
+    <img src="logorose1.png" class="background-logo">
 
     <div class="button-container">
-  <a href="jeunes.php" class="btn">Demande de Référent</a>
-  <form method="POST" action="connex.php">
-    <button type="submit" name="deco">Déconnexion</button>
-  </form>
- 
-</div>
-<div class="body-container">
-<form class="email-form" action="" method="post">
- <input type="text" name="consultant_email" placeholder="Email du consultant"><br>
-  <input type="text" name="referent_email" placeholder=" Email du référent"><br>
-  <input class="submit-button" type="submit">
-</form>
+        <a href="jeunes.php" class="btn">Demande de Référent</a>
+        <form method="POST" action="connex.php">
+            <button type="submit" name="deco">Déconnexion</button>
+        </form>
+    </div>
 
-<h3>Vos demandes de références</h3>
+    <div class="body-container">
+        <form class="email-form" action="" method="post">
+            <input type="text" name="consultant_email" placeholder="Email du consultant"><br>
+            <input type="text" name="referent_email" placeholder=" Email du référent"><br>
+            <input class="submit-button" type="submit">
+        </form>
 
-</div>
+        <h3>Vos demandes de références</h3>
+    </div>
+
 </body>
 </html>
 
 <?php
 session_start();
+
+// Vérifie si l'utilisateur est connecté
 if (isset($_SESSION["user_email"])) {
   
 } else {
   
 }
 
-$user_mail=$_SESSION["user_email"];
+$user_mail = $_SESSION["user_email"];
 
+// Gestion de la déconnexion
 if (isset($_POST['deco'])) {
     session_destroy();
     header('Location: connex.php');
@@ -96,6 +92,7 @@ if (isset($_POST['deco'])) {
 ?>
 
 <?php
+// Inclusion des fichiers PHPMailer nécessaires
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
 require 'PHPMailer/src/Exception.php';
@@ -103,11 +100,11 @@ require 'PHPMailer/src/Exception.php';
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-$referentEmail ="";
+$referentEmail = "";
 if (isset($_POST['consultant_email']) && isset($_POST['referent_email'])) {
     $consultantEmail = $_POST['consultant_email'];
     $referentEmail = $_POST['referent_email'];   
-    // Maintenant, les deux adresses e-mail sont stockées dans $consultantEmail et $referentEmail
+    // Les adresses e-mail du consultant et du référent sont maintenant stockées dans $consultantEmail et $referentEmail
     // Vous pouvez les utiliser comme bon vous semble
 }
 
@@ -118,7 +115,7 @@ $foundLinetmp = -1;
 while (($line = fgetcsv($file1)) !== FALSE) {
     $lineNumbertmp++;
 
-    // Vérifier si la première colonne (index 0) correspond à $user_mail
+    // Vérifie si la première colonne (index 0) correspond à $user_mail
     // et si la huitième colonne (index 7) correspond à $referentEmail
     if ($line[0] == $user_mail && $line[7] == $referentEmail) {
         $foundLinetmp = $lineNumbertmp;
@@ -128,10 +125,6 @@ while (($line = fgetcsv($file1)) !== FALSE) {
 
 fclose($file1);
 
-
-
-
-
 $file2 = fopen('refCombined.csv', 'r');
 $lineNumberref = 0;
 $foundLineref = -1;
@@ -139,8 +132,8 @@ $foundLineref = -1;
 while (($line = fgetcsv($file2)) !== FALSE) {
     $lineNumberref++;
 
-    // Vérifier si la première colonne (index 0) correspond à $user_mail
-    // et si la huitième colonne (index 7) correspond à $referentEmail
+    // Vérifie si la première colonne (index 0) correspond à $user_mail
+    // et si la deuxième colonne (index 1) correspond à $referentEmail
     if ($line[0] == $user_mail && $line[1] == $referentEmail) {
         $foundLineref = $lineNumberref;
         break;
@@ -149,27 +142,29 @@ while (($line = fgetcsv($file2)) !== FALSE) {
 
 fclose($file2);
 
-// Si $foundLine est toujours -1 à ce stade, cela signifie que nous n'avons pas trouvé une ligne correspondante
-if ($foundLinetmp!=-1 && $foundLineref == -1) {
-    echo "<p style='color: rgb(229, 0, 126); margin-top:-15%; margin-left:0%;'>Votre demande est en attente, veuillez réessayez ultérieurement</p>";
+// Si $foundLinetmp est différent de -1, cela signifie que la demande est en attente
+if ($foundLinetmp != -1 && $foundLineref == -1) {
+    echo "<p style='color: rgb(229, 0, 126); margin-top:-15%; margin-left:0%;'>Votre demande est en attente, veuillez réessayer ultérieurement</p>";
 }
-if($foundLinetmp==-1 && $foundLineref == -1){
-  echo "<p style='color: rgb(229, 0, 126); margin-top:-15%; margin-left:0%;'>Vous n'avez pas de référent possédant cette adresse mail</p>";
 
+// Si $foundLinetmp et $foundLineref sont tous deux égaux à -1, cela signifie que l'utilisateur n'a pas de référent avec cette adresse e-mail
+if ($foundLinetmp == -1 && $foundLineref == -1) {
+    echo "<p style='color: rgb(229, 0, 126); margin-top:-15%; margin-left:0%;'>Vous n'avez pas de référent possédant cette adresse e-mail</p>";
 }
-if($foundLinetmp!=-1 && $foundLineref != -1){
+
+// Si $foundLinetmp est différent de -1 et $foundLineref est différent de -1, cela signifie que la demande et la référence sont trouvées
+if ($foundLinetmp != -1 && $foundLineref != -1) {
     echo "Ligne ref trouvée à la position : " . $foundLineref;
-   // $emailReferentInput = $_POST['emailReferent'];
 
     $mail = new PHPMailer(true);
-    try{ 
-        $mail->isSMTP();                                           
-        $mail->Host       = 'smtp.gmail.com';                  
+    try {
+        $mail->isSMTP();
+        $mail->Host       = 'smtp.gmail.com';
         $mail->Port       = 587;
-        $mail->SMTPAuth   = true;                                
-        $mail->Username   = 'mailjeunes6.4@gmail.com';                     
-        $mail->Password   = 'hlddoflplovfftkd';                              
-        $mail->SMTPSecure = 'tls'; 
+        $mail->SMTPAuth   = true;
+        $mail->Username   = 'mailjeunes6.4@gmail.com';
+        $mail->Password   = 'hlddoflplovfftkd';
+        $mail->SMTPSecure = 'tls';
         
         $mail->setFrom('mailjeunes6.4@gmail.com');
         $mail->addAddress($consultantEmail, '');
@@ -181,24 +176,19 @@ if($foundLinetmp!=-1 && $foundLineref != -1){
         $mail->SMTPOptions = array(
             'ssl' => array (
                 'verify_peer' => false,
-                'verify_peer_name' =>false,
-                'allow_self_signed' =>true
+                'verify_peer_name' => false,
+                'allow_self_signed' => true
             )
         );
         $mail->send();
         
-        echo'Email envoyé';
-
+        echo 'Email envoyé';
     } catch(Exception $e) {
         echo 'Erreur envoi ' . $mail->ErrorInfo;
     }
-  }
-
+}
 ?>
 
-<?php
-
-?>
 <?php
 $user_email = $_SESSION["user_email"];
 $file = fopen('tmp.csv', 'r');
@@ -213,6 +203,7 @@ while (($line = fgetcsv($file)) !== FALSE) {
 }
 
 fclose($file);
+
 $fileCombined = fopen('refCombined.csv', 'r');
 $combined_lines = [];
 
@@ -221,6 +212,7 @@ while (($lineCombined = fgetcsv($fileCombined)) !== FALSE) {
 }
 
 fclose($fileCombined);
+
 $matches_updated = [];
 
 foreach ($matches as $match) {
@@ -240,11 +232,9 @@ foreach ($matches as $match) {
 
 echo '<div style="display: flex; justify-content: center; align-items: center; height: 100vh;">';
 echo '<table style="border:1px solid black; background-color: pink; text-align: center; margin-top:-80%; margin-left:70%">';
-
 foreach ($matches_updated as $match_updated) {
     echo '<tr><td style="border:1px solid black;">' . $match_updated['match'] . '</td><td style="border:1px solid black;">' . $match_updated['response'] . '</td></tr>';
 }
-
 echo '</table>';
 echo '</div>';
 ?>
