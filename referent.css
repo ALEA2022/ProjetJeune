@@ -1,0 +1,287 @@
+.top-bar {/**/
+    background-color: gray;
+    padding: 70px;
+    background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+  }
+  .menu {/**/
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .menu-container {
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .footer-text{
+     position: absolute;
+        top: 10;
+        right: 70px;
+        color:white;
+        font-size: 40px;
+        margin-top: 0%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      
+      
+      .element img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 245px; 
+        height: auto;
+       
+      }
+  
+      .menu {
+        display: flex;                /* Transformation en flexbox */
+        padding:0;                    /* Suppression des marges internes */
+            /* Ajout de la couleur d'arrière-plan */
+        justify-content:center;/* Alignements des liens dans le menu */
+    }
+    .menu li {
+        list-style-type: none ;       /* Suppression des puces */
+        background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+    }
+    .menu a {
+        display:block;                /* Transformation en block */
+        min-width: 120px;             /* Largeur minimale des liens */   
+        
+        margin: 0.3rem;               /* Marges externes */
+        padding: 0.4rem 0;            /* Marges internes */
+        text-align: center;           /* Centrage du texte */   
+           /* Arrière-plan */
+         background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244));               /* Couleur du texte */
+        text-decoration: none;        /* Suppression du soulignement */
+               /* Ajout d'une bordure */
+                 /* Arrondis des bordures */
+       
+        transition: all 1s ;          /* Ajout des effets de transition */
+    }
+    .menuj a.actif {    
+        background-color: #000 ; 
+        color: #1ABC9C ;
+        border-color: #1ABC9C ;
+    }
+    .menuj a:hover,
+    .menuj a:hover.actif{
+        color:rgb(229, 0, 126);
+        border-color:rgb(229, 0, 126);
+    }
+    .menur a:hover,
+    .menur a:hover.actif{
+       
+        color:rgb(19, 165, 57);
+        border-color: rgb(19, 165, 57);
+    }
+    .menuc a:hover,
+    .menuc a:hover.actif{
+        
+        color:  rgb(0, 159,227);
+        border-color:rgb(0, 159,227);
+    }
+    .menup a:hover,
+    .menup a:hover.actif{
+        color:rgb(112, 111, 116);
+        border-color: rgb(112, 111, 116);
+    }
+    .menua a:hover,
+    .menua a:hover.actif{
+        color:rgb(229, 0, 126);
+        border-color:rgb(229, 0, 126);
+    }
+    .presentationS {
+  
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+   .jeunes {
+  color: rgb(229, 0, 126);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.referent {
+  color: rgb(19, 165, 57);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.consultant {
+  color: rgb(0, 159,227);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.partenaires {
+  color: rgb(112, 111, 116);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.administrateur {
+    color: rgb(255, 152, 9);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .positionimg{
+    display: flex;
+    justify-content: center;
+  }
+  .positionimg img {
+    width: 80%; /* Réduire la largeur de l'image à 50% */
+  }
+  h2{
+    color: rgb(19, 165, 56);
+    text-align: center;
+  }
+ 
+
+  fieldset{
+    background-color: rgb(255, 255, 255);
+    position: relative; 
+    z-index: 1; /* Ceci place ces éléments devant l'image */
+    justify-content: center;
+    align-items: center;
+  margin-left: 32.5%;
+  margin-top:5%;
+  width: 500px;
+  height:250px;
+  border-color: rgb(195,211,13);
+  }
+  
+  #right {/* cadre checkbox*/
+   margin: 0 auto;
+   padding-left: 80%;
+   width: auto;
+   margin-top: -400px;
+  }
+  
+  #main input{
+    border: none; /* Cache la bordure */
+    border-bottom: 2.5px dotted rgb(195,211,13); /* Ajoute une bordure inférieure pointillée et change la couleur des pointillés */
+  width: 290px;
+  }
+  
+  #main input:focus {
+    outline: none; /* Supprime la bordure de mise en évidence lors de la mise au point */
+    flex:1;
+  }
+  
+  .background-logo {
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+  height: 80%;
+  left: 420px; /* Déplace l'image de 100px vers la droite */
+  top: 100px; /* Déplace l'image de 100px vers le bas */
+  margin-top: 398px;
+  }
+   .titlecheck{
+      width: 171px;
+      height: 30px;
+      background: linear-gradient(to left,rgb(19, 165, 56),rgb(195,211,13));
+      position: absolute;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+    }
+  
+    #field_checkbox{
+      margin-top: -15%;
+      width: 150px;
+      height: 300px;
+      background:linear-gradient(to top, rgb(195,211,13),rgb(255, 255, 255));
+      border: none;
+    }
+
+    small{
+      color:rgb(195,211,13);
+      margin-left: 40%;
+     }
+
+     input[name="submit"] {
+      background-color: rgb(195,211,13);
+      color: white;
+      font-size: 16px;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin-left: 78%;
+    }
+    
+    
+  
+  #text_field{
+    color: rgb(195,211,13);
+    font-size: 21px;
+  }
+  
+  #text-input {
+    font-size: 21 px;
+    color: rgb(42, 32, 110); /* Couleur initiale du texte */
+    font-family: "Brush Script MT", cursive;
+  }
+  .jesuis{
+    text-align:end;
+    color: rgb(255, 255, 255);
+    margin-right: 10%;
+    font-size: 15px;
+}
+textarea{
+  margin-top: -200%;
+  margin-left: 0%;
+  width: 150px;
+  height: 300px;
+  background:linear-gradient(to top, rgb(195,211,13),rgb(255, 255, 255));
+}
+
+.recup{
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 1%;
+  background:rgb(255, 255, 255);
+  border:3px double rgb(195,211,13);
+  width: 300px;
+  height: 100px;
+  font-size: 15px;
+  color: rgb(195,211,13);
+  box-shadow: 6px 4px 16px;
+
+}
+.recup input{
+  border: none; /* Cache la bordure */
+  border-bottom: 2.5px dotted rgb(195,211,13);
+  
+}
+
+#text-input {
+  font-size: 20px;
+  color: rgb(42, 32, 110); /* Couleur initiale du texte */
+  font-family: "Brush Script MT", cursive;
+}
+
+

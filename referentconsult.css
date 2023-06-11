@@ -1,0 +1,95 @@
+
+
+
+.fieldset1{
+  background-color: rgb(255, 255, 255);
+  position:relative; 
+  z-index: 1; /* Ceci place ces éléments devant l'image */
+  justify-content: center;
+  align-items: center;
+
+  margin-top:6%;
+  width: 650px;
+  height:350px;
+  border: 2px solid rgb(195,211,13);
+  
+}
+  
+#main1 input{
+  border: none; /* Cache la bordure */
+  border-bottom: 2.5px dotted rgb(112, 111, 116); /* Ajoute une bordure inférieure pointillée et change la couleur des pointillés */
+  width: 200px;
+}
+  
+#main1 input:focus {
+  outline: none; /* Supprime la bordure de mise en évidence lors de la mise au point */
+  flex:1;
+}
+
+  
+#text_field1{
+  color: rgb(112, 111, 116);
+  font-size: 25px;
+  margin-left: 5%;
+  }
+  
+#text-input {
+  font-size: 19 px;
+  color: rgb(42, 32, 110); /* Couleur initiale du texte */
+  font-family: "Brush Script MT", cursive;
+}
+  
+
+
+.background-logo {
+  position: absolute;
+  z-index: -1;
+  width: 55%;
+  height: 75%;
+  left: 300px; /* Déplace l'image de 100px vers la droite */
+  top: 180px; /* Déplace l'image de 100px vers le bas */
+ 
+}
+
+#container{
+display: flex;
+justify-content: space-around;
+padding: 0 60px;
+box-sizing: border-box;
+}
+
+#qualite-container {
+ 
+  background:linear-gradient(to top, rgb(195,211,13),rgb(255, 255, 255));
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  text-align: right;
+  width: 30%;
+}
+
+
+
+#qualite-container input[type="text"] {
+  margin-top: 15%;
+  background-color: transparent; /* Rend l'input transparent */
+}
+.titlecheck{
+  
+  height: 30px;
+  background: linear-gradient(to left,rgb(19, 165, 56),rgb(195,211,13));
+  position: absolute;
+  left: 0;
+  top:0;
+  right:0;
+  
+}
+
+#main1 input[type="text"] {
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px; /* Augmente la taille de la police à 20 pixels */
+}
+
+

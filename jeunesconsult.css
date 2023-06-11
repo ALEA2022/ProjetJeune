@@ -1,0 +1,251 @@
+.top-bar {/**/
+
+    padding: 70px;
+    background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+  }
+  .menu {/**/
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+  .menu-container {
+    text-align: center;
+  }
+  
+  .menu {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu li a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .footer-text{
+     position: absolute;
+        top: 10;
+        right: 70px;
+        color:white;
+        font-size: 40px;
+        margin-top: 0%;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin-bottom: 0%;
+      }
+      
+      
+      .element img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 245px; 
+        height: auto;
+       
+      }
+.menu {
+  display: flex;                /* Transformation en flexbox */
+  padding:0;                    /* Suppression des marges internes */
+            /* Ajout de la couleur d'arrière-plan */
+  justify-content:center;/* Alignements des liens dans le menu */
+}
+.menu li {
+  list-style-type: none ;       /* Suppression des puces */
+  background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244)); 
+}
+.menu a {
+  display:block;                /* Transformation en block */
+  min-width: 120px;             /* Largeur minimale des liens */   
+        
+  margin: 0.3rem;               /* Marges externes */
+  padding: 0.4rem 0;            /* Marges internes */
+  text-align: center;           /* Centrage du texte */   
+      /* Arrière-plan */
+  background:linear-gradient(to left, rgb(198, 198, 198),rgb(244, 244, 244));               /* Couleur du texte */
+  text-decoration: none;        /* Suppression du soulignement */
+               /* Ajout d'une bordure */
+                 /* Arrondis des bordures */
+       
+  transition: all 1s ;          /* Ajout des effets de transition */
+}
+
+.menuj a.actif {    
+  background-color: #000 ; 
+  color: #1ABC9C ;
+  border-color: #1ABC9C ;
+}
+
+.menuj a:hover,
+.menuj a:hover.actif{
+  color:rgb(229, 0, 126);
+  border-color:rgb(229, 0, 126);
+}
+.menur a:hover,
+.menur a:hover.actif{
+  color:rgb(19, 165, 57);
+  border-color: rgb(19, 165, 57);
+}
+
+.menuc a:hover,
+.menuc a:hover.actif{        
+  color:  rgb(0, 159,227);
+  border-color:rgb(0, 159,227);
+}
+.menup a:hover,
+.menup a:hover.actif{
+    color:rgb(112, 111, 116);
+    border-color: rgb(112, 111, 116);
+}
+.menua a:hover,
+.menua a:hover.actif{
+  color:rgb(229, 0, 126);
+  border-color:rgb(229, 0, 126);
+}
+.presentationS {
+  
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.jeunes {
+  color: rgb(229, 0, 126);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.referent {
+  color: rgb(19, 165, 57);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.consultant {
+  color: rgb(0, 159,227);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.partenaires {
+  color: rgb(112, 111, 116);
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.administrateur {
+    color: rgb(255, 152, 9);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+
+.jesuis{
+  text-align:end;
+  color: rgb(255, 255, 255);
+  margin-right: 10%;
+  font-size: 15px;
+}
+
+.fieldset{
+  background-color: rgb(255, 255, 255);
+  position: relative; 
+  z-index: 1; /* Ceci place ces éléments devant l'image */
+  justify-content: center;
+  align-items: center;
+  margin-top:6%;
+  width: 650px;
+  height:350px;
+  border: 2px solid rgb(229, 0, 126);
+ 
+}
+
+#right {/* cadre checkbox*/
+  margin: 0 auto;
+  padding-left: 80%;
+  width: auto;
+  margin-top: -300px;
+  }
+
+#main input{
+  border: none; /* Cache la bordure */
+  border-bottom: 2.5px dotted rgb(112, 111, 116); /* Ajoute une bordure inférieure pointillée et change la couleur des pointillés */
+  width: 200px;
+}
+
+#main input:focus {
+  outline: none; /* Supprime la bordure de mise en évidence lors de la mise au point */
+  flex:1;
+}
+
+
+
+h2{
+  font-size: 25px;
+  text-align: center;
+  margin-left: 5%;
+}  
+.h2bis{
+  font-size: 30px;
+  text-align: left;
+  margin-left: 5%;
+  margin-top:5%;
+}
+
+
+#text_field{
+  color: rgb(112, 111, 116);
+  font-size: 25px;
+  margin-left: 5%;
+}
+
+#text-input {
+  font-size: 19 px;
+  color: rgb(42, 32, 110); /* Couleur initiale du texte */
+  font-family: "Brush Script MT", cursive;
+}
+
+
+#qualitej-container {
+ 
+  background:linear-gradient(to top, rgb(243, 211, 227),rgb(255, 255, 255));
+  padding: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  text-align: right;
+  width: 30%;
+}
+
+
+
+#qualitej-container input[type="text"] {
+  margin-top: 15%;
+  background-color: transparent; /* Rend l'input transparent */
+}
+.titlecheckj{
+  
+  height: 30px;
+  background: linear-gradient(to left,rgb(230, 0, 126),rgb(249,213,231));
+  position: absolute;
+  left: 0;
+  top:0;
+  right:0;
+  
+}
+#main input[type="text"] {
+  font-family: "Brush Script MT", cursive;
+  font-size: 20px;
+}

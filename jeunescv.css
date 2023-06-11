@@ -1,0 +1,66 @@
+.centered-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 10%;
+  }
+  
+ 
+  .form-container {
+    margin-bottom: 20px;
+  }
+  
+  
+  .btn {
+    background:linear-gradient(to left,  rgb(230, 0, 126),rgb(232, 191, 209));
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px ;
+    margin-left:0%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .btnT {
+    background:linear-gradient(to top,  rgb(251, 159, 193),rgb(245, 211, 228));
+    display: inline-block;
+    font-size: 18px;
+    padding: 8px ;
+    margin-left:0%;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffff;
+    border: none;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+  }
+  .menu .submenu {
+    display: none;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    position: absolute;
+    margin-top: 5px;
+  }
+  
+  .menu .menuj:hover .submenu {
+    display: block;
+  }
+  
+  .menu .submenu li {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .menu .submenu li a {
+    color:rgb(230, 0, 126);
+    text-decoration: none;
+  }
+  
